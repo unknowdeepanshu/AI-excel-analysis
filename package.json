@@ -13,9 +13,12 @@
     "nodemon": "^3.1.11"
   },
   "dependencies": {
+    "@genkit-ai/google-genai": "^1.25.0",
+    "@google/genai": "^1.30.0",
     "dotenv": "^17.2.3",
     "ejs": "^3.1.10",
     "express": "^5.2.1",
+    "genkit": "^1.25.0",
     "googleapis": "^166.0.0"
   }
 }

@@ -1,6 +1,7 @@
 import dotenv from 'dotenv';
 import express from 'express';
-import { rowData } from './googleSheets.js';
+import { readValue } from './AIagent/toolAi.js';
+import { callAI} from './AIagent/aIAgent.js';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
@@ -23,11 +24,18 @@ app.set("views", path.join(__dirname, "../views"));
 app.use(express.static(path.join(__dirname,"../public")));
 
 // Define routes
-app.get('/student',(req,res)=>{
-    res.send(rowData.data);
+app.get('/student', async (req,res)=>{
+    const metadata = await readValue();
+    res.send(metadata);
 });
  
-app.get("/",(req,res)=>{
+app.get("/", async (req,res)=>{
     res.render("userChat.ejs")
 })
+//aiOutput 
+// app.get("/aires",(req,res)=>{
+//     console.log(aiOutput);
+//     res.send(aiOutput);
+// });
+
 
