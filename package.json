@@ -19,6 +19,7 @@
     "ejs": "^3.1.10",
     "express": "^5.2.1",
     "genkit": "^1.25.0",
-    "googleapis": "^166.0.0"
+    "googleapis": "^166.0.0",
+    "multer": "^2.0.2"
   }
 }

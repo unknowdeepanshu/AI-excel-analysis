@@ -7,3 +7,32 @@ body{
     height: 100vh;
     background-color: black;
 }
+#main{
+    height: 100vh;
+    overflow-y: hidden;
+    position:absolute ;
+}
+/* sidebar for data */
+#sidebar{
+    width: 0;
+    overflow: hidden;
+}
+#btnside{
+    position: absolute;
+    left: 3rem;
+}
+/* for ai chat scroll */
+.container{
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+#input{
+    position:absolute;
+    bottom:0;
+    width:66rem;
+}
+/* the show charts */
+#showCharts{
+    width:80rem;
+}
